@@ -1,8 +1,8 @@
 {
   "id": "transparent-github-sync",
   "name": "Transparent GitHub Sync",
-  "version": "1.0.1",
-  "minAppVersion": "1.14.0",
+  "version": "1.0.2",
+  "minAppVersion": "1.13.0",
   "description": "Adds a ribbon icon which opens a menu with a pull and push for syncing with GitHub.",
   "author": "Ashhhy",
   "isDesktopOnly": true
