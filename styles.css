@@ -1,0 +1,257 @@
+.git-push-modal * {
+  margin: 0;
+  padding: 0;
+}
+
+.git-push-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.git-push-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.git-file-information {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  flex-grow: 1;
+}
+
+.number-of-files-info {
+  margin: 0 0 10px 10px;
+}
+
+.git-file-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--color-base-70);
+  max-height: calc(100vh - 250px);
+  min-height: 100px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.git-push-actions {
+  display: flex;
+  justify-content: end;
+}
+
+.button {
+  padding: 15px 30px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.folder-header {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.folder-header input[type="checkbox"] {
+  display: none;
+}
+
+.folder-icon svg {
+  transform: translateY(1px);
+}
+
+.content-list {
+  margin-left: 6px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 15px;
+  border-left: 1px solid var(--color-base-30);
+}
+
+.file-container {
+  display: flex;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 7px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  transform: translateX(-8px);
+}
+
+.file-container input[type="checkbox"] {
+  transform: translateY(2px) scale(0.8);
+}
+.file-container:hover {
+  background-color: var(--color-base-30);
+}
+
+.file-status {
+  width: 70px;
+  margin-left: auto;
+}
+
+.file-status--new {
+  color: var(--color-green);
+}
+
+.file-status--modified {
+  color: var(--color-orange);
+}
+
+.file-status--deleted {
+  color: var(--color-red);
+}
+
+.file-status--conflict {
+  color: var(--color-yellow);
+}
+
+.repo-name {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 90%;
+}
+
+.repo-header {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.repo-checkbox {
+  display: none;
+}
+
+.repo-icon {
+  transform: translateX(-3px);
+}
+
+.repo-path {
+  color: var(--color-base-50);
+  font-size: 14px;
+}
+
+.name-of-commit {
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--color-base-00);
+  border-radius: 5px;
+  border: 1px solid var(--color-base-30);
+  color: var(--color-base-70);
+}
+
+.hint {
+  padding: 20px;
+}
+
+.error-message {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid var(--color-base-30);
+  border-radius: 5px;
+}
+
+.github-ribbon-icon {
+  cursor: pointer;
+}
+
+.github-ribbon-icon svg {
+  stroke: var(--color-accent);
+}
+
+.github-menu {
+  transform: translateX(25px) translateY(-7px);
+  width: 120px;
+  border-radius: 5px;
+}
+
+.github-menu .menu-scroll .menu-group .menu-item.tappable {
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 2px 0;
+  font-weight: 600;
+  font-size: 13px;
+  transition-duration: 0.4s;
+}
+
+.github-menu
+  .menu-scroll
+  .menu-group
+  .menu-item.tappable
+  svg.lucide-arrow-down-to-line {
+  stroke: var(--color-blue);
+}
+
+.github-menu
+  .menu-scroll
+  .menu-group
+  .menu-item.tappable
+  svg.lucide-arrow-up-from-line {
+  stroke: var(--color-orange);
+}
+
+.github-menu .menu-scroll .menu-separator {
+  margin: 2px;
+}
+
+.button.commit-button {
+  margin-right: auto;
+  background-color: var(--color-base-20);
+  color: var(--color-base-60);
+}
+
+.button.commit-button:hover {
+  margin-right: auto;
+  background-color: var(--color-base-30);
+  color: var(--color-base-90);
+}
+
+.pull-message {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.code {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-base-30);
+  color: var(--color-base-70);
+}
+
+.step-header {
+  margin-top: 20px;
+}
+
+.url {
+  padding: 10px;
+  margin: 10px;
+  margin-top: 0;
+  background-color: var(--color-base-00);
+  border-radius: 5px;
+  border: 1px solid var(--color-base-30);
+  color: var(--color-base-70);
+}
+
+.configuration-path {
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--color-base-00);
+  border-radius: 5px;
+  border: 1px solid var(--color-base-30);
+  color: var(--color-base-70);
+}
+
+.wizard-info {
+  padding: 10px;
+  color: var(--color-base-70);
+}
